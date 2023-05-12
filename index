@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta charset="UTF-8">
+<title>Survey Form</title>
+<link rel="stylesheet" href="styles.css">
+  <h1 id="title">freeCodeCamp Survey Form</h1>
+  <p id="description">Thank you for taking time to help us improve the platform</p>
+
+  <!-- Form -->
+  <form id="survey-form">
+    
+    <fieldset> <!-- Name, Email, Age Text -->
+      <label id="name-label">Name
+        <input id="name" type="text" placeholder="Enter your name"required/>
+      </label>
+      <label id="email-label">Email
+        <input id="email" type="email" placeholder="Enter your Email" required/>
+      </label>
+      <label id="number-label">Number
+        <input id="number" type="number" min="10" max="120" placeholder="Enter your number" required/>
+      </label>
+    </fieldset>
+
+    <fieldset>
+      
+ <!-- Job Status Dropdown Menus -->
+      <label for="job-status">Which option best describes your current job status?</label>
+      <select id="dropdown">
+        <option value="">Select job status</option>
+        <option value="1">Student</option>
+        <option value="2">Full-Time</option>
+        <option value="3">Part-Time</option>
+        <option value="4">Unemployed</option>
+      </select>
+    </fieldset>
+
+    <fieldset>
+    <!-- Radio Buttons -->
+      <label>Would you recommend our software to others?</label>
+      
+      <label for="yes-rbtn"><input id="yes-rbtn" name="recommend" value="1" type="radio" class="inline"/>Yes</label>
+
+      <label for="maybe-rbtn"><input id="maybe-rbtn" name="recommend" value="2" type="radio" class="inline"/>Maybe</label>
+
+      <label for="no-rbtn"><input id="no-rbtn"name="recommend" value="3" type="radio" class="inline"/>No</label>
+    </fieldset>
+
+    <fieldset>
+
+    <!-- Checkboxes -->
+    <label>What would you like to see improved?</label>
+    <label for="cb1"><input name="cb1" type="checkbox" value="1"class="inline"/>Front End Projects</label>
+    <label for="cb2"><input name="cb2"type="checkbox" value="2" class="inline"/>Back End Projects</label>
+    <label for="cb3"><input name="cb3" type="checkbox" value="3" class="inline"/>Data Structures</label>
+    <label for="cb4"><input name="cb4" type="checkbox" value="4" class="inline"/>Machine Learning</label>
+    <label for "cb5"><input name="cb5" type="checkbox" value="5" class="inline"/>More Languages</label>
+    <label for "cb6"><input name="cb6" type="checkbox" value="6" class="inline"/>Cross-Platform Compatibility</label>
+
+    </fieldset>
+
+    <fieldset>
+    <!-- Text Area -->
+    <label>Any comments or suggestions?
+      <textarea id="comments" name="comments" rows="5" cols="30" placeholder="Enter your comments here..."></textarea>
+    </label>
+
+    </fieldset>
+    
+    <!-- Submit Button -->
+    <input id="submit" type="Submit" value="Submit"/>
+
+
+  <form>
+
+</html>
