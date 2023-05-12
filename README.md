@@ -1,2 +1,2 @@
 # SurveyForm
-SurveyForm Project from freeCodeCamp.org
+Survey Form Certification Project from freeCodeCamp.org
